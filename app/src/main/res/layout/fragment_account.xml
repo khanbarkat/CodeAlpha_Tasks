@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".FitnessTrackingApp.AccountFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profilePicture_img"
+                    style="@style/CircleImageViewStyle"
+                    android:layout_width="140sp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="25sp"
+                    android:background="@drawable/circleimg"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/profile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/edit"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="250dp"
+                    android:src="@drawable/img_12" />
+
+
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"/>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginTop="80dp"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+                <TextView
+                    android:id="@+id/emailTextView"
+                    android:layout_width="300dp"
+                    android:gravity="center"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/details"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/heightTextView"
+                    android:layout_width="300dp"
+                    android:gravity="center"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/details"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/weightTextView"
+                    android:layout_width="300dp"
+                    android:gravity="center"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/details"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="300dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginEnd="60dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/counter">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/dark"
+                        android:text="Logout"
+                        app:strokeColor="@color/white"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:cornerRadius="25dp"
+                        app:strokeWidth="2dp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</FrameLayout>

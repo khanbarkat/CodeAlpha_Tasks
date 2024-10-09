@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlashcardQuizApp.AddFlashcard">
+
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter Question"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="4dp"
+        app:boxStrokeWidthFocused="3dp"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/red"
+        app:counterMaxLength="100"
+        app:hintTextColor="@color/black"
+        app:counterEnabled="true"
+        app:endIconMode="clear_text"
+        app:counterTextColor="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/question"
+            android:maxLength="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter Answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="4dp"
+        android:background="@color/white"
+        app:boxStrokeWidthFocused="3dp"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/red"
+        app:counterMaxLength="100"
+        app:hintTextColor="@color/black"
+        app:counterEnabled="true"
+        app:counterTextColor="@color/blue"
+        app:endIconMode="clear_text"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/answer"
+            android:maxLength="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="160dp"
+        android:backgroundTint="@color/blue"
+        android:text="Save"
+        android:textColor="#FBFAFA"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

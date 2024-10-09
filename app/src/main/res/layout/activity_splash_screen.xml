@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlashcardQuizApp.SplashScreen"
+    android:background="@color/blue">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imguser"
+        style="@style/CircleImageViewStyle"
+        android:layout_width="150dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/circleimg"
+        android:scaleType="centerInside"
+        android:src="@drawable/img_1"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="364dp"
+        android:text="FlashCard "
+        android:textAllCaps="false"
+        android:textColor="#D81515"
+        android:textColorHighlight="#BF2020"
+        android:textColorHint="#BC1B1B"
+        android:textColorLink="#AF2626"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imguser" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
